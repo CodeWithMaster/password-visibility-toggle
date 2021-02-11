@@ -1,0 +1,81 @@
+@font-face {
+  font-family: courgette;
+  src: url("../font/Courgette-Regular.ttf") format("truetype");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: courgette;
+}
+body {
+  font-size: 16px;
+  background: #ecf0f1;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container form {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  padding: 1em;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px #bdc3c7;
+  width: 400px;
+}
+form h1 {
+  text-align: center;
+  margin: 0.5em 0;
+  font-size: 35px;
+  color: #2980b9;
+}
+form input,
+form button {
+  padding: 0.8em 0.5em;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+  margin: 1em 0;
+  width: 100%;
+}
+form div {
+  width: 100%;
+  position: relative;
+}
+form div label {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0.5em;
+  cursor: pointer;
+  color: #7c7c7c;
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  transition: background 0.3s;
+}
+form div label:hover {
+  background: #eee;
+}
+div label::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+form div input[type="checkbox"] {
+  display: none;
+}
+form button {
+  background: #2980b9;
+  color: #fff;
+  transition: background 0.3s;
+  cursor: pointer;
+}
+form button:hover {
+  background: #14537c;
+}
